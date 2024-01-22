@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    height: 250px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+header img {
+    background-position: center center;
+    width: 100%;
+    background-size: cover;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.games {
+    background-color: rgba(166, 142, 108, 0.732);
+}
+
+.details {
+    background-color: rgba(166, 142, 108, 0.732);
+    height: 100vh;
+}
+
+.back {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.514);
+    height: 240px;
+
+}
+
+figcaption span {
+    background-color: rgba(82, 65, 27, 0.707);
+
+}
+
+
+.navbar1 {
+    background-color: rgba(82, 65, 27, 0.707);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    font-family: 'Righteous', sans-serif;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    max-width: 50px;
+}
+
+.navbar1 h1 {
+    font-size: 26px;
+    color: rgb(208, 194, 0);
+    margin-bottom: 3px;
+}
+
+.navbar1 ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    width: 50%;
+}
+
+.navbar1 ul.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: rgba(82, 65, 27, 0.707);
+    border-radius: 16px;
+}
+
+.navbar1 ul li {
+    margin: 0 15px;
+}
+
+.navbar1 ul li a {
+    text-decoration: none;
+    color: rgb(213, 204, 73);
+    display: block;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.navbar1 ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .navbar1 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-logo {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .navbar1 h1 {
+        font-size: 20px;
+    }
+
+    .navbar1 ul {
+        width: 100%;
+        display: none;
+        /* Hide the navigation links by default */
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: rgba(82, 65, 27, 0.707);
+        border-radius: 16px;
+    }
+
+    .navbar1 ul.show {
+        display: flex;
+        /* Show the navigation links when the show class is added */
+    }
+
+    .navbar1 ul li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        /* Show the menu toggle button on smaller screens */
+    }
+}
+
+
+.card-footer span {
+    color: rgba(0, 0, 0, 0.507);
+}
